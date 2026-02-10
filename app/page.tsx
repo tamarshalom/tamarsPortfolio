@@ -57,6 +57,8 @@ const socialLinks = [
   { href: "mailto:tamarlshalom@gmail.com", label: "Email" },
 ];
 
+const intro = `Hello everyone !! I'm Tamar Shalom, a Computer Science student at Rutgers University with a minor in Business Administration, aiming to graduate in May 2027. I have always been the type of person to have friends from all over the world and enjoy bringing people together. A skill of mine is definitely turning awkward situations into experiences that are memorable and meaningful. That instinct of connecting people is a big part of what draws me to product management and technology/product building. I'm especially interested in the intersection between people and technology. I love building systems that take complex information and transform it into clear experiences for real users. My work spans full stack development and product focused problem solving. I've built many projects that involve both of those things. They analyze large columns of data and patterns in ways that can be very actionable. Whether I'm working with a new large language model or even shaping user experience I care deeply about reliability and how the product feels to use. In addition, I strongly believe that engineering has to fade into a background that allows users to focus on what they're actually trying to accomplish. Alongside my technical background, I've spent time in product and user research roles that have shaped how I approach anything I build engineering wise. Through the fellowships I have accomplished, I conducted extensive user interviews that helped me learn how to identify core pain points and trust gaps. One of the biggest lessons I have learned is that even the strongest technical solution only solves part of the problem. This means that many products actually require attention, listening, and prioritizing intentionally building with real constraints. Overall, this website serves as a living portfolio of my work and ongoing growth. It highlights the projects I have built, the skills I'm developing, and the ideas I'm excited to explore. As I continue my studies at Rutgers I'll keep updating this space to reflect what I'm learning and building along the way.`;
+
 const nowItems = [
   { label: "Fellowship", value: "AI & responsible tech" },
   { label: "Building", value: "Side projects and this site" },
@@ -76,6 +78,11 @@ export default function Home() {
         stats={heroStats}
         socialLinks={socialLinks}
       />
+      <Section className="pt-4 md:pt-8">
+        <p className="text-body text-muted leading-relaxed max-w-3xl whitespace-pre-line">
+          {intro}
+        </p>
+      </Section>
       <Section title="Highlights" className="pt-4 md:pt-8">
         <Highlights items={highlights} />
       </Section>
