@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
 import { Now } from "@/components/Now";
@@ -68,6 +69,18 @@ const nowItems = [
 export default function Home() {
   return (
     <>
+      <header className="relative w-full px-4 py-6 md:px-8 md:py-8 flex justify-center bg-background">
+        <div className="relative w-full max-w-5xl aspect-square md:aspect-[16/10] rounded-sm overflow-hidden">
+          <Image
+            src="/assets/header.png"
+            alt="Tamar Shalom — Computer Science Student"
+            fill
+            sizes="(max-width: 768px) 100vw, 1024px"
+            className="object-contain"
+            priority
+          />
+        </div>
+      </header>
       <Hero
         title="Tamar Shalom"
         role="AI • Full-stack • Product"
