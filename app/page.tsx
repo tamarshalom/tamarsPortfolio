@@ -69,18 +69,21 @@ const nowItems = [
 export default function Home() {
   return (
     <>
-      <header className="relative w-full px-4 py-6 md:px-8 md:py-8 flex justify-center bg-background">
-        <div className="relative w-full max-w-5xl aspect-square md:aspect-[16/10] rounded-sm overflow-hidden">
+      <section
+        aria-label="Site header"
+        className="relative w-full px-4 py-4 md:px-6 md:py-6 bg-background"
+      >
+        <div className="relative w-full aspect-[16/6] md:aspect-[21/9] rounded-sm overflow-hidden">
           <Image
             src="/assets/header.png"
             alt="Tamar Shalom — Computer Science Student"
             fill
             sizes="(max-width: 768px) 100vw, 1024px"
-            className="object-contain"
+            className="object-cover"
             priority
           />
         </div>
-      </header>
+      </section>
       <Hero
         title="Tamar Shalom"
         role="AI • Full-stack • Product"

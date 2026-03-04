@@ -10,6 +10,7 @@ import {
 } from "@/lib/mdx";
 import { Callout } from "@/components/Callout";
 import { Figure } from "@/components/Figure";
+import { YouTube } from "@/components/YouTube";
 import { BlogSources } from "@/components/BlogSources";
 import { BlogNav } from "@/components/BlogNav";
 
@@ -41,6 +42,7 @@ export async function generateMetadata({
 const mdxComponents = {
   Callout,
   Figure,
+  YouTube,
   Sources: BlogSources,
   a: ({
     href,
