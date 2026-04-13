@@ -1,5 +1,15 @@
 # Tamar Shalom — Portfolio
 
+[![Live site](https://img.shields.io/badge/live%20site-tamarshalom.com-ff006e?style=flat-square)](https://tamarshalom.com)
+[![GitHub](https://img.shields.io/badge/GitHub-repo-181717?style=flat-square&logo=github)](https://github.com/tamarshalom/tamarsPortfolio)
+
+| | |
+| --- | --- |
+| **Website** | **[https://tamarshalom.com](https://tamarshalom.com)** |
+| **Source** | [github.com/tamarshalom/tamarsPortfolio](https://github.com/tamarshalom/tamarsPortfolio) |
+
+*If you deploy on Vercel, your project also has a `*.vercel.app` URL—use whichever is your primary domain in GitHub’s repo “About” section (see below).*
+
 A minimal, production-ready personal portfolio and blog built with **Next.js 14** (App Router), **TypeScript**, **Tailwind CSS**, and **MDX**.
 
 ## Stack
@@ -47,6 +57,15 @@ npm start
 5. Click **Deploy**. Future pushes to your main branch will trigger automatic deployments.
 
 **Custom domain:** In the project dashboard, go to **Settings → Domains** and add your domain (e.g. `tamarshalom.com`). Follow the DNS instructions.
+
+### Show the live site on your GitHub repo
+
+1. Open your repo on GitHub: [tamarshalom/tamarsPortfolio](https://github.com/tamarshalom/tamarsPortfolio).
+2. Click the **⚙️** next to **About** (top right of the repo page).
+3. Under **Website**, paste your public URL (e.g. `https://tamarshalom.com` or your `*.vercel.app` link).
+4. Save. The link appears on the repo homepage so visitors can open your portfolio in one click.
+
+The repo must be **public** (Settings → General → Danger Zone → Change repository visibility) for anyone to see the code and the About link without signing in.
 
 ## Troubleshooting: 500 on `/_next/static/chunks/fallback/...`
 
