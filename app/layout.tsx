@@ -30,7 +30,9 @@ export const metadata: Metadata = {
     locale: "en_US",
   },
   metadataBase: new URL("https://tamarshalom.com"),
-  icons: { icon: "/favicon.svg" },
+  icons: {
+    icon: `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/favicon.svg`,
+  },
 };
 
 export default function RootLayout({

@@ -75,7 +75,7 @@ export default function Home() {
       >
         <div className="relative w-full aspect-[16/6] md:aspect-[21/9] rounded-sm overflow-hidden">
           <Image
-            src="/assets/header.png"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/assets/header.png`}
             alt="Tamar Shalom — Computer Science Student"
             fill
             sizes="(max-width: 768px) 100vw, 1024px"

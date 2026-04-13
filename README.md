@@ -7,8 +7,23 @@
 | --- | --- |
 | **Website** | **[https://tamarshalom.com](https://tamarshalom.com)** |
 | **Source** | [github.com/tamarshalom/tamarsPortfolio](https://github.com/tamarshalom/tamarsPortfolio) |
+| **GitHub Pages** | After you enable Pages (see below): **`https://tamarshalom.github.io/tamarsPortfolio/`** |
 
 *If you deploy on Vercel, your project also has a `*.vercel.app` URL—use whichever is your primary domain in GitHub’s repo “About” section (see below).*
+
+### Turn on “live on GitHub” (GitHub Pages)
+
+This repo includes a workflow that builds the site and publishes it to **GitHub Pages** so your teacher can open a `github.io` link.
+
+1. On GitHub, open **Settings → Pages** (for this repository).
+2. Under **Build and deployment**, set **Source** to **GitHub Actions** (not “Deploy from a branch”).
+3. Push to `main` (or run the workflow manually under **Actions → Deploy to GitHub Pages → Run workflow**).
+4. When the workflow finishes, your site will be at **`https://tamarshalom.github.io/tamarsPortfolio/`** (username + repo name).
+5. Add that URL to the repo **About** section as the **Website** so it shows on the repo homepage.
+
+**If your repository name is not `tamarsPortfolio`**, edit `.github/workflows/deploy-github-pages.yml` and set `BASE_PATH` to `/YourExactRepoName` (must match the URL path GitHub uses).
+
+**Vercel is unchanged:** normal `npm run build` (no `STATIC_EXPORT`) still produces the usual app for Vercel; only the GitHub Action uses static export + `BASE_PATH`.
 
 A minimal, production-ready personal portfolio and blog built with **Next.js 14** (App Router), **TypeScript**, **Tailwind CSS**, and **MDX**.
 
