@@ -11,6 +11,7 @@ import {
 import { Callout } from "@/components/Callout";
 import { Figure } from "@/components/Figure";
 import { YouTube } from "@/components/YouTube";
+import { SoundCloud } from "@/components/SoundCloud";
 import { BlogSources } from "@/components/BlogSources";
 import { BlogNav } from "@/components/BlogNav";
 
@@ -43,6 +44,7 @@ const mdxComponents = {
   Callout,
   Figure,
   YouTube,
+  SoundCloud,
   Sources: BlogSources,
   a: ({
     href,
